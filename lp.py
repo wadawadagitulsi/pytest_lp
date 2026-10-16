@@ -1,3 +1,4 @@
+import sys
 def is_leap_year(year):
     if year % 400 == 0:
         return True
@@ -9,7 +10,7 @@ def is_leap_year(year):
         return False
 
 
-year = int(input("Enter a year: "))
+year = int(sys.argv[1])
 
 if is_leap_year(year):
     print("Leap year")
